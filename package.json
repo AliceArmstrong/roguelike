@@ -2,9 +2,10 @@
   "name": "roguelike",
   "version": "1.0.0",
   "description": "A practice roguelike game",
-  "main": "app.js",
+  "private": "true",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --progress --hide-modules"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,31 @@
   "bugs": {
     "url": "https://github.com/AliceArmstrong/roguelike/issues"
   },
-  "homepage": "https://github.com/AliceArmstrong/roguelike#readme"
+  "homepage": "https://github.com/AliceArmstrong/roguelike#readme",
+  "dependencies": {
+    "babel-runtime": "^6.23.0",
+    "nvm": "0.0.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^8.2.5",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-istanbul": "^4.1.4",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-html": "^4.0.5",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-jsx-a11y": "^6.1.0",
+    "eslint-plugin-react": "^7.0.1",
+    "webpack": "^4.15.0",
+    "webpack-cli": "^3.0.8"
+  }
 }
